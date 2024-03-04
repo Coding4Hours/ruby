@@ -1,5 +1,5 @@
 const transports = localStorage.getItem('transports');
-const wispUrl = localStorage.getItem('wispUrl') || (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
+const wispUrl = localStorage.getItem('wispUrl') || "wss://wisp.mercurywork.shop"
 
 function setTransports() {
         switch (transports) {
